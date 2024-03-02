@@ -1,6 +1,10 @@
 # React + Vite
+# FILMPIRE
 
 -Configure Tailwind css
+- Header
+- Login form
+- Sign Up form
 
 # features
 - Login /Sign Up page
