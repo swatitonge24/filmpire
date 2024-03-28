@@ -41,9 +41,14 @@ signOut(auth).then(() => {
   navigate("/");
       }
     });
-   
+   //unsubscribe when component unmount
     return ()=> unsubscribe();
    },[]);
+
+   const handleGPTSearchClick =()=>{
+  //Toggle search
+
+   }
   return (
     <div className='absolute w-screen px-12 py-8 bg-gradient-to-b from-black z-10 flex justify-between'>
   
@@ -54,9 +59,11 @@ alt="logo"/>
 
 { user && (
 <div className='flex p-2'>
-  <img className="w-12 h-12" src={USER_ICON}/>
+  <button className='mx-4 my-2 p-4 bg-purple-800 text-white rounded-lg'
+   onClick ={handleGPTSearchClick}>GPT Search</button>
+  <img className="w-12 h-12 my-2" src={USER_ICON}/>
 
-<button  onClick={handleSignOut} className= 'font-bold text-xl bg-blue-300 rounded-lg p-3'>
+<button  onClick={handleSignOut} className= 'mx-4 my-2 p-4 font-bold  bg-blue-300  rounded-lg '>
   SignOut</button>
     </div>
   )}

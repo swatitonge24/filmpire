@@ -26,6 +26,14 @@
 - Fetch data for trailer vedio.
 - Update store with trailer vedio data
 - Embeded youtube vedio and make it autoplay and mute.
+- Build secondary Container.
+- Movie List
+- Build Movie Card
+- TMDB image CDN
+- usePopularMovies Browser page
+- GPT Search feature
+  
+- 
 
 
 # features
