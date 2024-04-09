@@ -6,7 +6,7 @@ import { BANNER } from '../utilities/constant';
  const GPTSearch = () => {
   return (
     <div>
-      <div className='absolute -z-20'>
+      <div className='fixed -z-20'>
 <img src={BANNER}
       alt="logo"/>
 </div>

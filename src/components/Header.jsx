@@ -6,7 +6,7 @@ import { useSelector,useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import {addUser,removeUser} from "../utilities/userSlice";
-import { LOGO, SUPPORTED_LANGUAGE } from '../utilities/constant';
+import { LOGO,SUPPORTED_LANGUAGES } from '../utilities/constant';
 import { USER_ICON } from '../utilities/constant';
 import { toggleGPTSearchView } from '../utilities/gptSlice';
 import lang from '../utilities/languageConstants';
@@ -61,18 +61,18 @@ signOut(auth).then(() => {
    }
 
   return (
-    <div className='absolute w-screen px-12 py-8 bg-gradient-to-b from-black z-10 flex justify-between'>
+    <div className='absolute w-screen px-12  py-2 bg-gradient-to-b from-black z-10 flex justify-between'>
   
      
-<img  className="w-52"
+<img  className="w-52 "
 src={LOGO}
 alt="logo"/>
 
 { user && (
 <div className='flex p-2'>
   {showGPTSearch && (
-  <select className='p-2 m-2 bg-gray-900 text-white' onChange={handleLanguageChange}>
-{SUPPORTED_LANGUAGE.map((lang)=>(
+  <select className='p-2 m-2 bg-gray-600 text-white' onChange={handleLanguageChange}>
+{SUPPORTED_LANGUAGES.map((lang)=>(
    <option key={lang.identifier} value={lang.identifier}>
       {lang.name}
     </option>
