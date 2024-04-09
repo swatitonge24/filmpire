@@ -32,6 +32,8 @@
 - TMDB image CDN
 - usePopularMovies Browser page
 - GPT Search feature
+- GPT Search bar
+- Multi-language page
   
 - 
 
