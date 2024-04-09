@@ -2,6 +2,7 @@ import { useDispatch } from "react-redux";
 import { API_OPTION } from "../utilities/constant";
 import { addTrailerVedio } from "../utilities/moviesSlice";
 import { useEffect } from "react";
+import {useSelector} from 'react-redux';
 
  const useMovieTrailer =(movieId)=>{
     const dispatch = useDispatch();
