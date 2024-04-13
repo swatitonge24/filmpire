@@ -61,15 +61,15 @@ signOut(auth).then(() => {
    }
 
   return (
-    <div className='absolute w-screen px-12  py-2 bg-gradient-to-b from-black z-10 flex justify-between'>
+    <div className='absolute w-screen px-12  py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between'>
   
      
-<img  className="w-52 "
+<img  className="w-40 mx-auto md:mx-0 "
 src={LOGO}
 alt="logo"/>
 
 { user && (
-<div className='flex p-2'>
+<div className='flex p-2 justify-between'>
   {showGPTSearch && (
   <select className='p-2 m-2 bg-gray-600 text-white' onChange={handleLanguageChange}>
 {SUPPORTED_LANGUAGES.map((lang)=>(
@@ -81,17 +81,18 @@ alt="logo"/>
   )}
 
   
-  <button className='mx-4 my-2 p-4 bg-purple-800 text-white rounded-lg'
+  <button className='mx-3 my-1 p-2 bg-purple-800 text-white rounded-lg'
    onClick ={handleGPTSearchClick}>
     {showGPTSearch? "Homepage" : "GPT Search"}</button>
-  <img className="w-12 h-12 my-2" src={USER_ICON}/>
+  <img className=" hidden md:inline-block w-12 h-12 my-2" src={USER_ICON}/>
 
-<button  onClick={handleSignOut} className= 'mx-4 my-2 p-4 font-bold  bg-blue-300  rounded-lg '>
+<button  onClick={handleSignOut} className= ' md: m-2 p-2 font-semibold  bg-blue-300  rounded-lg '>
   SignOut</button>
     </div>
+  
   )}
     </div>
-    );
+  )
     
 }
 

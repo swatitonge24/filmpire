@@ -34,6 +34,15 @@
 - GPT Search feature
 - GPT Search bar
 - Multi-language page
+- get Open AI Api key
+- GPT search Api call
+- Search GPT Search MovieSuggestions.
+- Create GPT slice and added data.
+-  reused movie list to make movie suggestions container.
+- memoization
+- added .env file
+- Made our site responsive.
+-
   
 - 
 
